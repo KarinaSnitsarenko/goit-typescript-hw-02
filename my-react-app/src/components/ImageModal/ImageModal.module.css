@@ -1,0 +1,8 @@
+.image {
+  max-width: 500px;
+  object-fit: cover;
+}
+
+.modal {
+  pointer-events: none;
+}
