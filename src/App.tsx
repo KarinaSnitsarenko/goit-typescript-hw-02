@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Toaster } from "react-hot-toast";
+// import { Toaster } from "react-hot-toast";
 import "./App.css";
 import getImages from "./components/getImages";
 import SearchBar from "./components/SearchBar/SearchBar";
@@ -37,7 +37,8 @@ const App = () => {
       try {
         setIsLoading(true);
         const data: Results = await getImages(query, page);
-        setImages((prevImages) => [...prevImages, ...data.results]);
+        // setImages((prevImages) => [...prevImages, ...data.results]);
+        setImages(data.results);
       } catch (error) {
         setIsError(true);
       } finally {
