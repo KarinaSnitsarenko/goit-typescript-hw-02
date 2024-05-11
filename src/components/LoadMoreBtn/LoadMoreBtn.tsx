@@ -1,23 +1,3 @@
-// // LoadMoreBtn.tsx
-// import React from "react";
-// import css from "./LoadMoreBtn.module.css";
-
-// interface LoadMoreBtnProps {
-//   onLoadMore: () => void;
-// }
-
-// const LoadMoreBtn: React.FC<LoadMoreBtnProps> = ({ onLoadMore }) => {
-//   return (
-//     <div className={css.loadMore}>
-//       <button onClick={onLoadMore} className={css.loadMoreButton} type="button">
-//         {/* Load more ⬇️ */}
-//       </button>
-//     </div>
-//   );
-// };
-
-// export default LoadMoreBtn;
-
 import css from "./LoadMoreBtn.module.css";
 
 interface LoadMoreBtnProps {
@@ -26,8 +6,8 @@ interface LoadMoreBtnProps {
 
 const LoadMoreBtn: React.FC<LoadMoreBtnProps> = ({ onClick }) => {
   return (
-    <div className={css.containerBtn}>
-      <button type="button" className={css.button} onClick={onClick}>
+    <div className={css.loadMore}>
+      <button type="button" className={css.loadMoreButton} onClick={onClick}>
         Load more ⬇️
       </button>
     </div>
