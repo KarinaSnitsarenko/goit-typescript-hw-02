@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { Toaster } from "react-hot-toast";
 import "./App.css";
 import getImages from "./components/getImages";
 import SearchBar from "./components/SearchBar/SearchBar";
